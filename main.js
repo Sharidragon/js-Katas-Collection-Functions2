@@ -6,13 +6,13 @@ console.log(add(2, 4))
 
 // 2. Multiply
 function multiply(x, y){
-    let w = 0
+    let n = 0
     for (let i = 0; i < y; i += 1){
-        w = add(x, w)
+        n = add(x, n)
     }
-    return w
+    return n
 }
-console.log(multiply(3, 4))
+console.log(multiply(6, 4))
 
 //  3. Power/Exponentiation
 function nth (x, y){
@@ -34,14 +34,16 @@ console.log(nth(2, 8))
 }
 console.log(fact(5))
 
-
-
 // 5. Fibonacci
-function fib (n){
-  let arr = [0, 1];
-    for (let i = 2; i < n + 1; i++){
-      arr.push(arr[i - 2] + arr[i -1])
+function fib (x){
+  let a = 0
+  let b = 1
+  let n = 1
+    for (let i = 2; i < x; i += 1){
+    n = a + b;
+    a = b;
+    b = n; 
     }
-   return arr[n]
+   return n
   }
  console.log(fib(8))
